@@ -13,7 +13,10 @@ class BottomNavigationBarItemsApp extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         boxShadow: [
-          BoxShadow(blurRadius: 20, color: Colors.black.withOpacity(0.1)),
+          BoxShadow(
+            blurRadius: 20,
+            color: Colors.black.withOpacity(0.1),
+          ),
         ],
       ),
       child: const Padding(
