@@ -12,12 +12,6 @@ abstract class AppRouter {
           return const HomeView();
         },
       ),
-      // GoRoute(
-      //   path: kSearchView,
-      //   builder: (context, state) {
-      //     return const SearchView();
-      //   },
-      // ),
     ],
   );
 }
