@@ -5,15 +5,14 @@ import 'package:news_app/features/home/presentation/tabs/home_tebs.dart';
 import 'package:news_app/features/home/presentation/tabs/profile_tebs.dart';
 import 'package:news_app/features/home/presentation/tabs/search_tebs.dart';
 
-class BottomNavigationBarItems extends StatefulWidget {
-  const BottomNavigationBarItems({super.key});
+class GNavBarTabs extends StatefulWidget {
+  const GNavBarTabs({super.key});
 
   @override
-  State<BottomNavigationBarItems> createState() =>
-      _BottomNavigationBarItemsState();
+  State<GNavBarTabs> createState() => _GNavBarTabsState();
 }
 
-class _BottomNavigationBarItemsState extends State<BottomNavigationBarItems> {
+class _GNavBarTabsState extends State<GNavBarTabs> {
   int _currentIndex = 0;
   List<Widget> listOptions = <Widget>[
     const HomeTebs(),
