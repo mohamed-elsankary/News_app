@@ -5,12 +5,10 @@ class SearchTebs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-          child: Text(
-        'Search',
-        style: TextStyle(fontSize: 55),
-      )),
-    );
+    return const Center(
+        child: Text(
+      'Search',
+      style: TextStyle(fontSize: 55),
+    ));
   }
 }
