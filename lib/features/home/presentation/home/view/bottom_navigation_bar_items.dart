@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:news_app/features/home/presentation/view/tabs/global_tebs.dart';
-import 'package:news_app/features/home/presentation/view/tabs/home_tebs.dart';
-import 'package:news_app/features/home/presentation/view/tabs/profile_tebs.dart';
-import 'package:news_app/features/home/presentation/view/tabs/search_tebs.dart';
+import 'package:news_app/features/home/presentation/tabs/global_tebs.dart';
+import 'package:news_app/features/home/presentation/tabs/home_tebs.dart';
+import 'package:news_app/features/home/presentation/tabs/profile_tebs.dart';
+import 'package:news_app/features/home/presentation/tabs/search_tebs.dart';
 
 class BottomNavigationBarItems extends StatefulWidget {
   const BottomNavigationBarItems({super.key});

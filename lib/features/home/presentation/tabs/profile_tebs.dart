@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:news_app/features/home/presentation/tabs/widgets/linkes_profile_widget.dart';
 
 class ProfileTebs extends StatelessWidget {
   const ProfileTebs({super.key});
@@ -39,39 +40,7 @@ class ProfileTebs extends StatelessWidget {
             const SizedBox(
               height: 220,
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 50),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  const Icon(
-                    FontAwesomeIcons.facebook,
-                    color: Colors.blue,
-                    size: 35,
-                  ),
-                  const Icon(
-                    FontAwesomeIcons.twitter,
-                    color: Colors.blue,
-                    size: 35,
-                  ),
-                  Icon(
-                    FontAwesomeIcons.youtube,
-                    color: Colors.red[600],
-                    size: 35,
-                  ),
-                  Icon(
-                    FontAwesomeIcons.whatsapp,
-                    color: Colors.green[400],
-                    size: 35,
-                  ),
-                  Icon(
-                    FontAwesomeIcons.linkedin,
-                    color: Colors.blue[700],
-                    size: 35,
-                  ),
-                ],
-              ),
-            ),
+            const LinkesProfileWidget(),
             const SizedBox(
               height: 15,
             ),
