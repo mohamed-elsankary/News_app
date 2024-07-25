@@ -23,12 +23,12 @@ class NewsApp extends StatelessWidget {
             theme: ThemeData.light().copyWith(
               scaffoldBackgroundColor: Colors.white,
               primaryColor: AppThemeColor.primaryColor,
-              hintColor: Colors.black,
+              hintColor: Colors.white,
             ),
             themeMode: state,
             darkTheme: ThemeData.dark().copyWith(
               scaffoldBackgroundColor: Colors.black,
-              hintColor: Colors.white,
+              hintColor: Colors.black,
               primaryColor: Colors.orange,
             ),
           );

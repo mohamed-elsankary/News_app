@@ -22,6 +22,7 @@ class _GNavBarTabsViewState extends State<GNavBarTabsView> {
   ];
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Scaffold(
       body: listOptions.elementAt(_currentIndex),
       bottomNavigationBar: SafeArea(
@@ -43,9 +44,9 @@ class _GNavBarTabsViewState extends State<GNavBarTabsView> {
                   _currentIndex = value;
                 });
               },
-              activeColor: Colors.white,
+              activeColor: theme.hintColor,
               color: Colors.grey,
-              tabBackgroundColor: Colors.blue,
+              tabBackgroundColor: theme.primaryColor,
               padding: const EdgeInsets.all(8),
               gap: 8,
               tabs: const [

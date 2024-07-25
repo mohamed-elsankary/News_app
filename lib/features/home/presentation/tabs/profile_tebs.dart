@@ -7,6 +7,8 @@ class ProfileTebs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15),
@@ -23,7 +25,7 @@ class ProfileTebs extends StatelessWidget {
             ),
             Image.asset(
               'assets/images/news.png',
-              color: Colors.blue,
+              color: theme.primaryColor,
             ),
             const SizedBox(
               height: 220,
