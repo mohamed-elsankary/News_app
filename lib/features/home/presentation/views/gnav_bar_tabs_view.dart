@@ -27,7 +27,6 @@ class _GNavBarTabsViewState extends State<GNavBarTabsView> {
       bottomNavigationBar: SafeArea(
         child: Container(
           decoration: BoxDecoration(
-            color: Colors.white,
             boxShadow: [
               BoxShadow(
                 blurRadius: 20,
@@ -56,7 +55,7 @@ class _GNavBarTabsViewState extends State<GNavBarTabsView> {
                 ),
                 GButton(
                   icon: Icons.language,
-                  text: 'Global',
+                  text: 'Globtal',
                 ),
                 GButton(
                   icon: Icons.search,

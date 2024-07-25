@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:news_app/features/home/presentation/tabs/widgets/linkes_profile_widget.dart';
+import 'package:news_app/features/home/presentation/tabs/widgets/theme_app.dart';
 
 class ProfileTebs extends StatelessWidget {
   const ProfileTebs({super.key});
@@ -12,22 +12,10 @@ class ProfileTebs extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 15),
         child: Column(
           children: [
-            const SizedBox(
-              height: 15,
-            ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[100],
-                      borderRadius: BorderRadius.circular(50)),
-                  width: 55,
-                  height: 55,
-                  child: const Icon(
-                    FontAwesomeIcons.solidMoon,
-                  ),
-                )
+                ThemeApp(),
               ],
             ),
             const SizedBox(
