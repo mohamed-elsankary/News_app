@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:news_app/features/home/presentation/manger/bloc/theme_bloc.dart';
+import 'package:news_app/features/home/presentation/manger/set_data/set_data_cubit.dart';
 
 class ThemeApp extends StatefulWidget {
-  const ThemeApp({
-    super.key,
-  });
+  const ThemeApp({super.key});
 
   @override
   State<ThemeApp> createState() => _ThemeAppState();
@@ -19,13 +17,10 @@ class _ThemeAppState extends State<ThemeApp> {
         activeTrackColor: Colors.amber,
         inactiveThumbColor: Colors.white,
         inactiveTrackColor: Colors.blue,
-        value: context.read<ThemeBloc>().state == ThemeMode.dark,
-        onChanged: (value) {
-          setState(() {
-            context.read<ThemeBloc>().add(
-                  ThemeChanged(value),
-                );
-          });
+        value: BlocProvider.of<SetDataCubit>(context).getData() ?? false,
+        onChanged: (value) async {
+          await BlocProvider.of<SetDataCubit>(context).upDate(value: value);
+          setState(() {});
         });
   }
 }

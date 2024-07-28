@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/features/home/presentation/tabs/widgets/linkes_profile_widget.dart';
-import 'package:news_app/features/home/presentation/tabs/widgets/theme_app.dart';
 
 class ProfileTebs extends StatelessWidget {
   const ProfileTebs({super.key});
@@ -14,12 +13,6 @@ class ProfileTebs extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 15),
         child: Column(
           children: [
-            const Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                ThemeApp(),
-              ],
-            ),
             const SizedBox(
               height: 60,
             ),
