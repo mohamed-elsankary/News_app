@@ -36,8 +36,8 @@ class NewsApp extends StatelessWidget {
                 isThemeSaved ?? isDarkTheme ? ThemeMode.dark : ThemeMode.light,
             darkTheme: ThemeData.dark().copyWith(
               scaffoldBackgroundColor: Colors.black,
-              hintColor: Colors.black,
               primaryColor: Colors.orange,
+              hintColor: Colors.black,
             ),
           );
         },

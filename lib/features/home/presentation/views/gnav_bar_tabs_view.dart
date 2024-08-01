@@ -4,7 +4,7 @@ import 'package:news_app/features/home/presentation/tabs/global_tebs.dart';
 import 'package:news_app/features/home/presentation/tabs/home_tebs.dart';
 import 'package:news_app/features/home/presentation/tabs/profile_tebs.dart';
 import 'package:news_app/features/home/presentation/tabs/search_tebs.dart';
-import 'package:news_app/features/home/presentation/tabs/widgets/theme_app.dart';
+import 'package:news_app/features/home/presentation/tabs/widgets/switch_change_theme.dart';
 
 class GNavBarTabsView extends StatefulWidget {
   const GNavBarTabsView({super.key});
@@ -27,8 +27,13 @@ class _GNavBarTabsViewState extends State<GNavBarTabsView> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.transparent,
-          actions: const [ThemeApp()],
+          backgroundColor: theme.scaffoldBackgroundColor,
+          actions: const [
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10),
+              child: SwitchChangeTheme(),
+            )
+          ],
         ),
         body: listOptions.elementAt(_currentIndex),
         bottomNavigationBar: SafeArea(
@@ -62,7 +67,7 @@ class _GNavBarTabsViewState extends State<GNavBarTabsView> {
                   ),
                   GButton(
                     icon: Icons.language,
-                    text: 'Globtal',
+                    text: 'Global',
                   ),
                   GButton(
                     icon: Icons.search,

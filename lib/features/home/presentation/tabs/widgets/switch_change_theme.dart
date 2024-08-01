@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/features/home/presentation/manger/set_data/set_data_cubit.dart';
 
-class ThemeApp extends StatefulWidget {
-  const ThemeApp({super.key});
+class SwitchChangeTheme extends StatefulWidget {
+  const SwitchChangeTheme({super.key});
 
   @override
-  State<ThemeApp> createState() => _ThemeAppState();
+  State<SwitchChangeTheme> createState() => _SwitchChangeThemeState();
 }
 
-class _ThemeAppState extends State<ThemeApp> {
+class _SwitchChangeThemeState extends State<SwitchChangeTheme> {
   @override
   Widget build(BuildContext context) {
     return Switch(
