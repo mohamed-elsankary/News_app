@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:news_app/features/home/presentation/tabs/global_tebs.dart';
-import 'package:news_app/features/home/presentation/tabs/home_tebs.dart';
-import 'package:news_app/features/home/presentation/tabs/profile_tebs.dart';
-import 'package:news_app/features/home/presentation/tabs/search_tebs.dart';
+import 'package:news_app/features/home/presentation/tabs/views/global_tebs.dart';
+import 'package:news_app/features/home/presentation/tabs/views/home_tebs.dart';
+import 'package:news_app/features/home/presentation/tabs/views/profile_tebs.dart';
+import 'package:news_app/features/home/presentation/tabs/views/search_tebs.dart';
 import 'package:news_app/features/home/presentation/tabs/widgets/switch_change_theme.dart';
 
 class GNavBarTabsView extends StatefulWidget {

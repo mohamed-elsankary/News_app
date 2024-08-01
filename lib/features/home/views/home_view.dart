@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/features/home/presentation/views/gnav_bar_tabs_view.dart';
+import 'package:news_app/features/home/views/gnav_bar_tabs_view.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
