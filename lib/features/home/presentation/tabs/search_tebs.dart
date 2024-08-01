@@ -8,27 +8,33 @@ class SearchTebs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 10),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
             'Discover',
-            style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),
+            style: TextStyle(
+              fontSize: 45,
+              fontWeight: FontWeight.bold,
+            ),
           ),
-          Text(
+          const Text(
             'News from all around the world ',
-            style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
+            style: TextStyle(
+              color: Colors.grey,
+              fontWeight: FontWeight.bold,
+            ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          TextSearchFiled(),
-          SizedBox(
+          const TextSearchFiled(),
+          const SizedBox(
             height: 20,
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               CotegoryItems(
@@ -49,10 +55,21 @@ class SearchTebs extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
-          CardNews(),
+          Expanded(
+            child: ListView.builder(
+              scrollDirection: Axis.vertical,
+              itemCount: 10,
+              itemBuilder: (context, index) {
+                return const Padding(
+                  padding: EdgeInsets.only(bottom: 20),
+                  child: CardNews(),
+                );
+              },
+            ),
+          ),
         ],
       ),
     );
