@@ -60,6 +60,7 @@ class SearchTebs extends StatelessWidget {
           ),
           Expanded(
             child: ListView.builder(
+              physics: const BouncingScrollPhysics(),
               scrollDirection: Axis.vertical,
               itemCount: 10,
               itemBuilder: (context, index) {

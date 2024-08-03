@@ -37,7 +37,7 @@ class CardNews extends StatelessWidget {
               ),
               SizedBox(
                 height: 50,
-                width: MediaQuery.of(context).size.width * .63,
+                width: MediaQuery.of(context).size.width * .6,
                 child: const Text(
                   'Falling down is an accident. Staying down is a choice for you',
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),

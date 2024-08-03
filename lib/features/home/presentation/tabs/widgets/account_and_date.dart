@@ -8,7 +8,7 @@ class AccountAndDate extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return SizedBox(
-      width: MediaQuery.of(context).size.width * .63,
+      width: MediaQuery.of(context).size.width * .6,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

@@ -8,34 +8,32 @@ class ProfileTebs extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
-    return SafeArea(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 15),
-        child: Column(
-          children: [
-            const SizedBox(
-              height: 60,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10),
+      child: Column(
+        children: [
+          const SizedBox(
+            height: 60,
+          ),
+          Image.asset(
+            'assets/images/news.png',
+            color: theme.primaryColor,
+          ),
+          const SizedBox(
+            height: 220,
+          ),
+          const LinkesProfileWidget(),
+          const SizedBox(
+            height: 15,
+          ),
+          const Text(
+            'App Version : 1.0.0',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.grey,
             ),
-            Image.asset(
-              'assets/images/news.png',
-              color: theme.primaryColor,
-            ),
-            const SizedBox(
-              height: 220,
-            ),
-            const LinkesProfileWidget(),
-            const SizedBox(
-              height: 15,
-            ),
-            const Text(
-              'App Version : 1.0.0',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                color: Colors.grey,
-              ),
-            )
-          ],
-        ),
+          )
+        ],
       ),
     );
   }
