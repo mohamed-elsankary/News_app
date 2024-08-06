@@ -17,8 +17,8 @@ class CardNews extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30),
               image: const DecorationImage(
-                image: AssetImage('assets/images/logo.jpg'),
-              ),
+                  image: AssetImage('assets/images/joun wick.jpg'),
+                  fit: BoxFit.fill),
             ),
           ),
           const SizedBox(
