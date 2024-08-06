@@ -47,7 +47,7 @@ class _GNavBarTabsViewState extends State<GNavBarTabsView> {
               ],
             ),
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+              padding: const EdgeInsets.all(10),
               child: GNav(
                 selectedIndex: _currentIndex,
                 onTabChange: (value) {

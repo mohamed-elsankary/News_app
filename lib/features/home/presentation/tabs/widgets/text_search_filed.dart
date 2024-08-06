@@ -9,6 +9,7 @@ class TextSearchFiled extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return TextField(
+      style: const TextStyle(color: Colors.black),
       decoration: InputDecoration(
         filled: true,
         fillColor: AppThemeColor.lightGrey,
@@ -27,7 +28,9 @@ class TextSearchFiled extends StatelessWidget {
           borderRadius: BorderRadius.circular(30),
         ),
         focusedBorder: OutlineInputBorder(
-          borderSide: const BorderSide(color: AppThemeColor.lightGrey),
+          borderSide: const BorderSide(
+            color: AppThemeColor.lightGrey,
+          ),
           borderRadius: BorderRadius.circular(30),
         ),
       ),
